@@ -78,6 +78,7 @@ ol {
 	text-align: center;
 	position: relative;
 	background: #f2ede3;
+	/* background: linear-gradient(90deg, #f2ede3 0%, #bbb 100%); */
 }
 
 #footer span {
@@ -241,6 +242,7 @@ ol {
 
 .icon-command:before {
 	content: "\ea4e";
+	transform: rotate(45deg);
 }
 
 .icon-make-group:before {
@@ -356,21 +358,26 @@ div.bl-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -2% 0 -2%;
 } 
 
 .bl-content > ul li {
-	display: inline-block;
-	width: 20%;
 	margin: 1%;
+	flex-grow: 1;
 }
 
 .bl-content > ul li a {
+	text-align: center;
+	font-size: 3.25em;
+	font-family: "Beastly";
 	display: block;
 	padding: 0;
-	border: 8px solid rgba(0,0,0,0.1);
 }
 
 .bl-content > ul li a img {
+	border: 8px solid rgba(0,0,0,0.1);
 	display: block;
 	max-width: 100%;
 }
