@@ -61,7 +61,7 @@ ol {
 .title-text {
 	font-size: 5em;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-family: "beastly", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -72,6 +72,47 @@ ol {
 	/* height: 100%;  */
 	height: calc(100% - 150px);
 }
+
+#footer {
+	text-align: center;
+	position: relative;
+	background: #f2ede3;
+}
+
+#footer span {
+	height: 75px;
+  	line-height: 75px;
+  	text-align: center;
+	margin:0 40px;
+	text-transform: uppercase;
+	font-family: "beastly";
+	font-size: 3.25em;
+}
+
+.earth {
+	color: #81B29A;
+}
+.water {
+	color: #3D405B;
+}
+.fire {
+	color:#E07A5F;
+}
+.air {
+	color: #F2CC8F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bl-main {
 	position: absolute;
@@ -154,7 +195,7 @@ ol {
 	margin: 0;
 	padding: 20px;
 	width: 100%;
-	font-size: 1.8em;
+	font-size: 2.25em;
 	letter-spacing: 2px;
 	/* text-transform: uppercase; */
 }
@@ -252,6 +293,7 @@ ol {
 	z-index: 100;
 	opacity: 0;
 	pointer-events: none;
+	font-size: 2em;
 }
 
 .bl-icon-close:before {
@@ -412,7 +454,7 @@ div.bl-panel-items nav span.bl-next-work {
 
 div.bl-panel-items.bl-panel-items-show nav {
 	opacity: 1;
-	top: -70px;
+	top: -170px;
 }
 
 div.bl-panel-items > div.bl-show-work {
