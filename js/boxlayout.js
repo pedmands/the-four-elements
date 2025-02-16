@@ -25,7 +25,7 @@ var Boxlayout = (function() {
 		// if currently navigating the work items
 		isAnimating = false,
 		// close work panel trigger
-		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-close' ),
+		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-close, nav > span.icon-down' ),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -93,7 +93,7 @@ var Boxlayout = (function() {
 
 		} );
 
-		// navigating the work items: current work panel scales down and the next work panel slides up
+		// navigating the work items: current work panel scales down and the blt work panel slides up
 		$nextWorkItem.on( 'click', function( event ) {
 			
 			if( isAnimating ) {
