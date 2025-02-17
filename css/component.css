@@ -114,7 +114,8 @@ ol {
 	justify-content: space-around;
 	min-width: 100%;
 	gap: var(--gap);
-	animation: scroll 10s linear infinite; duration timing-function delay iteration-count direction fill-mode;
+	animation: scroll 10s linear infinite; 
+	/* duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes scroll {
@@ -234,7 +235,6 @@ ol {
 
 .bl-icon {
 	font-family: 'icomoon';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -492,6 +492,7 @@ div.bl-panel-items > div > div p {
 	font-family: "input-mono";
 	font-size: 1.25em;
 	margin-top: 0;
+	transform: translateX(-16px);
 }
 .elem-desc ul li::marker {
 	font-size: 1.5em;
@@ -514,6 +515,10 @@ div.bl-panel-items > div > div p {
 	font-family: "input-mono";
 	font-size: 1.5em;
 	line-height: 1.5em;
+}
+
+.ol-indent {
+	margin-left: 2em;
 }
 
 /* BOTTOM BORDER COLORS */
@@ -585,7 +590,6 @@ div.bl-panel-items nav {
 	top: 0px;
 	/* margin-left: -108px; */
 	transform: translateX(-50%);
-	);
 	opacity: 0;
 	-webkit-transition: opacity 0.2s ease-in-out 0.5s;
 	-moz-transition: opacity 0.2s ease-in-out 0.5s;
